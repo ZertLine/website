@@ -1,0 +1,227 @@
+header{
+    background-color: #1A0B49;
+}
+
+#news-data {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    animation-duration: 1s;
+    padding-inline: 25px;
+    padding-block: 20px;
+}
+
+#news-icon {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background-color: #fefbee;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#news-icon-new {
+    fill: #d4af0c;
+}
+
+#news-icon-discord {
+    fill: #5865F2;
+}
+
+#news-icon-youtube {
+    fill: #ff0000;
+}
+
+#news-icon-reddit {
+    fill: #ff5700;
+    fill-rule: evenodd;
+}
+
+#news-icon-x {
+    fill: #000000;
+}
+
+#news-icon-projects {
+    fill: #0bc181;
+}
+
+#news-icon-announcement {
+    fill: #6321f2;
+}
+
+#news-icon-post {
+    fill: #292e44;
+}
+
+#news-source {
+    font-family: roboto;
+    color: #fefbee;
+    margin-left: 10px;
+}
+
+#news-source-icon {
+    display: flex;
+    align-items: center;
+    margin-block: 15px;
+}
+
+#news-time {
+    font-family: remond;
+    font-size: 15px;
+    margin-left: 20px;
+    color: #6321f2;
+    background-color: rgba(254, 251, 236, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#news-title {
+    font-family: remond;
+    color: #fbedb2;
+    padding-bottom: 10px;
+}
+
+#news-content {
+    font-family: remond;
+    color: #fefbee;
+    margin-left: 20px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#news-media-holder {
+    margin: 30px;
+    /* background-color: #ff0000; */
+    overflow-x: auto;
+    width: fit-content;
+    max-width: 100%;
+    display: flex;
+    background-color: hsla(49, 89%, 96%, 0.1);
+    border-radius: 20px;
+    position: relative;
+}
+
+#news-media-holder::-webkit-scrollbar {
+    height: 10px;
+    background: transparent;
+    position: absolute;
+}
+
+#news-media-holder::-webkit-scrollbar-thumb {
+    background: hsla(49, 89%, 96%, 0.1);
+    border-radius: 5px;
+}
+
+#news-media-holder::-webkit-scrollbar-thumb:hover {
+    background: hsla(49, 89%, 96%, 0.5);
+}
+
+#news-media-holder::-webkit-scrollbar-track {
+    background: transparent;
+    margin-inline: 30px;
+}
+
+#news-media-holder::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+#news-media {
+    height: 200px;
+    margin: 20px;
+}
+
+#news-link {
+    font-family: noto;
+    color: #d4af0c;
+    margin-left: 10px;
+}
+
+#news-part {
+    position: relative;
+    margin-block: 5px;
+    margin-inline: 22px;
+    padding-block: 15px;
+    padding-left: 30px;
+}
+
+#news-part::before {
+    position: absolute;
+    top: 0;
+    left: -2px;
+    height: 100%;
+    content: '';
+    border-left: 10px solid #fbedb2;
+    border-radius: 10px;
+}
+
+.news-data-holder {
+    background-image: url(../../resources/image/svg/pattern.svg);
+    background-position: center;
+    background-size: 50%;
+    padding-block: 40px;
+    padding-inline: 20px;
+    width: calc(100% - 40px);
+    min-height: 100vh;
+}
+
+.news-header {
+    padding-block: 25px;
+    font-size: 50px;
+    font-family: roboto;
+    background-color: #6321f2;
+    width: 100%;
+    text-align: center;
+    color: #fefbee;
+    border-bottom: #fbedb2 solid 5px;
+}
+
+.news-footer {
+    text-align: center;
+    font-family: noto;
+    padding-block: 10px;
+}
+
+main {
+    background: linear-gradient(45deg, rgba(4, 19, 78, 0.502) 0%, rgba(33, 72, 242, 0.5) 100%);
+}
+
+@media only screen and (max-width: 700px) {
+    #news-source-icon {
+        display: block;
+        text-align: center;
+    }
+
+    #news-part {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #news-content,
+    #news-link,
+    #news-source,
+    #news-media-holder,
+    #news-time {
+        margin-left: 0;
+    }
+
+    #news-part::before {
+        display: none;
+    }
+
+    #news-container {
+        border-bottom: solid 1px #fefbee;
+        padding-block: 30px;
+    }
+
+    .news-data-holder {
+        background-size: 100%;
+    }
+
+    #news-content {
+        font-size: 13px;
+        font-family: noto;
+    }
+}
